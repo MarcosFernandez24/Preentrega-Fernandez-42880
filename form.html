@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Creacion de un formulario</h1>
+    </header>
+    <hr />
+    <main>
+      <form action="">
+        <div>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" required />
+          </div>
+          <br />
+          <div>
+            <label for="correo electronico">Email</label>
+            <input type="email" required />
+          </div>
+          <br />
+          <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" required />
+          </div>
+          <br />
+          <div>
+            <label for="pais de nacimiento">Nacionalidad</label>
+            <select name="nacionalidad" id="">
+              <option value="ar">Argentina</option>
+              <option value="ur">Uruguay</option>
+              <option value="ch">Chile</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="sexo"
+              >Genero: <input type="radio" name="sexo" value="femenino" />Mujer
+              <input type="radio" name="sexo" value="masculino" />Hombre
+              <input type="radio" name="sexo" value="no_b" />No binario
+            </label>
+          </div>
+          <br />
+          <div>
+            <label for="comentario">Deja tu mensaje</label><br />
+            <textarea name="comentarios" id="" cols="50" rows="10"></textarea>
+          </div>
+          <br />
+          <div>
+            <label for="cond">Aceptar las condiciones</label>
+            <input type="checkbox" required />
+          </div>
+          <input type="submit" value="Enviar formulario" />
+          <input type="reset" value="Borrar formulario" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
