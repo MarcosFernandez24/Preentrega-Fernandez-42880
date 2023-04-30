@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(238, 165, 177);
+}
+
+.imgLogo {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+}
+
+.indexHeader {
+  background-color: bisque;
+  width: 100%;
+  display: table;
+}
+
+nav {
+  float: right;
+}
+
+.liNav {
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  
+  
+}
+
+.navBar {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 50px;
+  text-decoration: underline black;
+  text-align: center;
+}
+h2 {
+  font-size: 35px;
+  text-decoration: underline black;
+  text-align: center;
+}
+h3 {
+  font-size: 25px;
+  text-decoration: underline black;
+}
