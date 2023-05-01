@@ -8,6 +8,70 @@ body {
   background-color: rgb(238, 165, 177);
 }
 
+.productosRecomendados {
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+}
+
+.categoriaVegana {
+  margin-top: 25px;
+}
+
+.comidaVegana {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.hamburguesas {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.mailImg {
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.wsppImg {
+  height: 100px;
+  width: 100px;
+}
+
+.imagenRestaurant1 {
+  width: 400px;
+  height: 267px;
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+.imagenRestaurant2 {
+  width: 400px;
+  height: 267px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.bodyQuienesSomos {
+  font-size: xx-large;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.imgLogo2 {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  margin-top: 50px;
+  margin-left: 850px;
+}
+
 .imgLogo {
   width: 100px;
   height: 100px;
@@ -16,20 +80,31 @@ body {
 
 .indexHeader {
   background-color: bisque;
+  border-bottom: 1px;
+  border-color: black;
+  border-style: double;
   width: 100%;
   display: table;
+}
+
+.mejoresProductos {
+  margin-top: 50px;
 }
 
 nav {
   float: right;
 }
 
+.producto1 {
+  width: 500px;
+  float: right;
+  margin-right: 400px;
+}
+
 .liNav {
   margin-left: 75px;
   padding: 12px 0;
   float: left;
-  
-  
 }
 
 .navBar {
