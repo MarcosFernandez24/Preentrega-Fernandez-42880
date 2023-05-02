@@ -6,6 +6,11 @@
 
 body {
   background-color: rgb(238, 165, 177);
+  font-family: "Slabo 27px", serif;
+}
+
+.h3Index {
+  text-align: center;
 }
 
 .productosRecomendados {
@@ -87,8 +92,13 @@ body {
   display: table;
 }
 
+.productosRecomendadosSection {
+  margin-top: 10px;
+}
+
 .mejoresProductos {
   margin-top: 50px;
+  margin-left: 550px;
 }
 
 nav {
@@ -116,13 +126,15 @@ h1 {
   font-size: 50px;
   text-decoration: underline black;
   text-align: center;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
 }
 h2 {
   font-size: 35px;
   text-decoration: underline black;
   text-align: center;
+  font-family: "Pacifico", cursive;
 }
 h3 {
   font-size: 25px;
-  text-decoration: underline black;
 }
