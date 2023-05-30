@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: rgb(238, 165, 177);
-  font-family: "Slabo 27px", serif;
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .h3Index {
@@ -23,10 +23,8 @@ body {
   margin-top: 25px;
 }
 
-.comidaVegana {
-  width: 200px;
-  height: 200px;
-  margin-left: 10px;
+.veganCategory {
+  text-align: center;
   margin-top: 10px;
 }
 
@@ -77,14 +75,8 @@ body {
   margin-left: 850px;
 }
 
-.imgLogo {
-  width: 100px;
-  height: 100px;
-  padding: 8px;
-}
-
 .indexHeader {
-  background-color: bisque;
+  background-color: rgb(1, 56, 92);
   border-bottom: 1px;
   border-color: black;
   border-style: double;
@@ -98,17 +90,21 @@ body {
 
 .mejoresProductos {
   margin-top: 50px;
-  margin-left: 550px;
-}
-
-nav {
-  float: right;
+  border-color: #454545;
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 6px;
+  background-color: #ff6000;
+  margin-bottom: 10px;
 }
 
 .producto1 {
   width: 500px;
-  float: right;
-  margin-right: 400px;
+  border-color: #454545;
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 6px;
+  background-color: #ff6000;
 }
 
 .liNav {
@@ -117,24 +113,70 @@ nav {
   float: left;
 }
 
-.navBar {
-  width: 900px;
-  margin: 0 auto;
-}
-
 h1 {
   font-size: 50px;
-  text-decoration: underline black;
+  text-decoration: underline #454545;
   text-align: center;
   font-weight: bold;
-  font-family: "Pacifico", cursive;
+  font-family: "Bebas Neue", sans-serif;
 }
 h2 {
   font-size: 35px;
-  text-decoration: underline black;
+  text-decoration: underline #454545;
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Bebas Neue", sans-serif;
 }
 h3 {
   font-size: 25px;
+}
+.headerStyle {
+  background-color: #ff6000;
+  border-color: #454545;
+  border-bottom: solid;
+  border-top: solid;
+  margin-top: 10px;
+}
+
+.categoryText {
+  background-color: #ff6000;
+  border-color: #454545;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.gridSystem {
+  background-color: black;
+}
+
+.productoMasVendido {
+  margin-top: 1;
+  align-items: center;
+}
+.logoIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #454545;
+}
+.navbar {
+  background-color: #ff6000;
+  border-color: #454545;
+  border-bottom: solid;
+  font-size: 25px;
+}
+.container {
+  margin-top: 20px;
+}
+.carousel {
+  margin-top: 30px;
+}
+
+.card {
+}
+.productsCategoryCads {
+  
+}
+a:hover {
+  background-color: #454545;
+  font-size: 2rem;
 }
