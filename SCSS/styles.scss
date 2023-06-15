@@ -1,0 +1,227 @@
+// Vars
+$font: "Bebas Neue", sans-serif;
+$bgColor: #ffa559;
+$themeColor: #ff6000;
+$themeColor2: #454545;
+$fontGrad: 25px;
+$positionGrad: center;
+
+// Include
+@mixin mejoresProductosIndex {
+  margin-top: 30px;
+  border-color: $themeColor2;
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 6px;
+  background-color: $themeColor;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: -25px;
+}
+@mixin imgsRestaurant {
+  width: 400px;
+  height: 267px;
+  margin-top: 50px;
+  background-color: $themeColor;
+  border: solid;
+  border-color: $themeColor2;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Body de "index.html"
+
+body {
+  background-color: $bgColor;
+  font-family: $font;
+
+  .grad1 {
+    background: linear-gradient(top, pink, violet, purple);
+  }
+
+  section {
+    .container {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    div {
+      div {
+        // Producto mas vendido
+
+        .mejoresProductos {
+          @include mejoresProductosIndex();
+        }
+      }
+      .producto1 {
+        width: 500px;
+        border-color: $themeColor2;
+        border-style: solid;
+        border-width: 0.2rem;
+        padding: 6px;
+        background-color: $themeColor;
+      }
+
+      // Producto mas vendido
+    }
+  }
+
+  .container {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .mejoresProductos {
+      @include mejoresProductosIndex();
+
+      .cardsRec {
+        display: flex;
+        margin-left: 1px;
+      }
+    }
+  }
+}
+
+// Body de "index.html"
+
+// Body de "productos.html"
+
+section {
+  .imgLogo2 {
+    border: solid;
+    border-color: $themeColor2;
+  }
+}
+body {
+  .headerStyle {
+    background-color: $themeColor;
+    border-color: $themeColor2;
+    border-bottom: solid;
+    border-top: solid;
+    margin-top: 10px;
+    font-family: $font;
+  }
+
+  section {
+    .categoryText {
+      background-color: $themeColor;
+      border-color: $themeColor2;
+      border-style: solid;
+      margin-top: 10px;
+    }
+  }
+}
+
+// Body de "productos.html"
+
+//Body de "quienesSomos.html"
+
+body {
+  .bodyQuienesSomos {
+    background-color: $themeColor;
+    border: solid;
+    border-color: $themeColor2;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: xx-large;
+  }
+  .imagenRestaurant1 {
+    @include imgsRestaurant();
+  }
+  .imagenRestaurant2 {
+    @include imgsRestaurant();
+  }
+}
+
+//Body de "quienesSomos.html"
+
+//Body de "contacto.html"
+
+body {
+  main {
+    section {
+      .wsppImg {
+        height: 100px;
+        width: 100px;
+        @media (max-width: 3840px) {
+          margin-left: 400px;
+        }
+        @media (max-width: 992px) {
+          margin-left: 0px;
+        }
+      }
+      .telefono {
+        @media (max-width: 3840px) {
+          margin-right: 500px;
+        }
+        @media (max-width: 992px) {
+          margin-left: 210px;
+          margin-top: 15px;
+        }
+      }
+      .mailImg {
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+        @media (max-width: 3840px) {
+          margin-left: 400px;
+        }
+        @media (max-width: 992px) {
+          margin-left: 0px;
+        }
+      }
+      .correo {
+        @media (max-width: 3840px) {
+          margin-right: 500px;
+        }
+        @media (max-width: 992px) {
+          margin-left: 170px;
+          margin-top: 15px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+//Body de "contacto.html"
+
+body {
+  div {
+    div {
+      .loginArea {
+        background-color: $themeColor;
+        border: solid;
+        border-color: $themeColor2;
+        padding: 50px;
+      }
+    }
+  }
+}
+
+// componentes de bootstrap(cards, navBar, etc)
+
+@import "bootstrapComponents";
+
+// componentes de bootstrap(cards, navBar, etc)
+
+// Strings como (H1, H2, etc)
+
+@import "string";
+
+// Strings como (H1, H2, etc)
+
+// imagenes o logo
+
+@import "imgs";
+
+// imagenes o logo
+
+a:hover {
+  background-color: $themeColor2;
+  font-size: 1.6rem;
+}

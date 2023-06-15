@@ -1,0 +1,49 @@
+$font: "Bebas Neue", sans-serif;
+
+@mixin cardsStyle {
+  background-color: $themeColor;
+  padding: 10px;
+  margin-left: 100px;
+  border-color: $themeColor2;
+  border-style: solid;
+  border-radius: 1px;
+  border-width: 0.2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+// Barra de navegacion
+.navbar {
+  background-color: $themeColor;
+  border-color: $themeColor2;
+  border-bottom: solid;
+  font-size: 25px;
+  font-family: $font;
+}
+
+// Carrousel
+.carousel {
+  margin-top: 30px;
+}
+
+// Estas son las cards que se encuentran en el "index.html"
+.card {
+  @include cardsStyle();
+  height: 25rem;
+  width: 25rem;
+  margin-top: 15px;
+  @media (max-width: 960px) {
+    margin-left: 40px;
+  }
+}
+// Estas son las cards que se encuentran en "productos.html"
+
+.productsCategoryCads {
+  @include cardsStyle();
+  height: 22rem;
+  width: 20rem;
+  margin-left: 150px;
+  @media (max-width: 960px) {
+    margin-left: 100px;
+  }
+}
