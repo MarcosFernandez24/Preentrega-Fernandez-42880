@@ -1,45 +1,55 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  body .container {
-    margin-top: 20px;
-    justify-content: center; }
-    body .container div .mejoresProductos {
-      margin-top: 30px;
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      background-color: #ff6000;
-      margin-bottom: 10px; }
-    body .container div .producto1 {
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      padding: 6px;
-      background-color: #ff6000; }
-  body .container {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center; }
-    body .container div .mejoresProductos {
-      margin-top: 30px;
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      background-color: #ff6000;
-      margin-bottom: 10px; }
-      @media (max-width: 400px) {
-        body .container div .mejoresProductos {
-          font-size: xx-large; } }
+  font-family: "Bebas Neue", sans-serif;
+}
+body .container {
+  margin-top: 20px;
+  justify-content: center;
+}
+body .container div .mejoresProductos {
+  margin-top: 30px;
+  border-color: #454545;
+  border-style: solid;
+  border-width: 0.2rem;
+  background-color: #ff6000;
+  margin-bottom: 10px;
+}
+body .container div .producto1 {
+  border-color: #454545;
+  border-style: solid;
+  border-width: 0.2rem;
+  padding: 6px;
+  background-color: #ff6000;
+}
+body .container {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+body .container div .mejoresProductos {
+  margin-top: 30px;
+  border-color: #454545;
+  border-style: solid;
+  border-width: 0.2rem;
+  background-color: #ff6000;
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  body .container div .mejoresProductos {
+    font-size: xx-large;
+  }
+}
 
 section .imgLogo2 {
   border: solid;
-  border-color: #454545; }
+  border-color: #454545;
+}
 
 body .headerStyle {
   background-color: #ff6000;
@@ -47,29 +57,38 @@ body .headerStyle {
   border-bottom: solid;
   border-top: solid;
   margin-top: 10px;
-  font-family: "Bebas Neue", sans-serif; }
-  @media (max-width: 400px) {
-    body .headerStyle {
-      font-size: xx-large; } }
+  font-family: "Bebas Neue", sans-serif;
+}
+@media (max-width: 400px) {
+  body .headerStyle {
+    font-size: xx-large;
+  }
+}
 
 body section .categoryText {
   background-color: #ff6000;
   border-color: #454545;
   border-style: solid;
-  margin-top: 10px; }
-  @media (max-width: 400px) {
-    body section .categoryText {
-      font-size: xx-large; } }
+  margin-top: 10px;
+}
+@media (max-width: 400px) {
+  body section .categoryText {
+    font-size: xx-large;
+  }
+}
 
 body .bodyQuienesSomos {
   background-color: #ff6000;
   border: solid;
   border-color: #454545;
   font-family: "Bebas Neue", sans-serif;
-  font-size: xx-large; }
-  @media (max-width: 600px) {
-    body .bodyQuienesSomos {
-      font-size: large; } }
+  font-size: xx-large;
+}
+@media (max-width: 600px) {
+  body .bodyQuienesSomos {
+    font-size: large;
+  }
+}
 
 body .imagenRestaurant1 {
   margin-top: 50px;
@@ -77,13 +96,18 @@ body .imagenRestaurant1 {
   border: solid;
   border-color: #454545;
   padding: 8px;
-  margin-bottom: 10px; }
-  @media (max-width: 460px) {
-    body .imagenRestaurant1 {
-      width: 300px; } }
-  @media (max-width: 340px) {
-    body .imagenRestaurant1 {
-      width: 250px; } }
+  margin-bottom: 10px;
+}
+@media (max-width: 460px) {
+  body .imagenRestaurant1 {
+    width: 300px;
+  }
+}
+@media (max-width: 340px) {
+  body .imagenRestaurant1 {
+    width: 250px;
+  }
+}
 
 body .imagenRestaurant2 {
   margin-top: 50px;
@@ -91,69 +115,95 @@ body .imagenRestaurant2 {
   border: solid;
   border-color: #454545;
   padding: 8px;
-  margin-bottom: 10px; }
-  @media (max-width: 460px) {
-    body .imagenRestaurant2 {
-      width: 300px; } }
-  @media (max-width: 340px) {
-    body .imagenRestaurant2 {
-      width: 250px; } }
+  margin-bottom: 10px;
+}
+@media (max-width: 460px) {
+  body .imagenRestaurant2 {
+    width: 300px;
+  }
+}
+@media (max-width: 340px) {
+  body .imagenRestaurant2 {
+    width: 250px;
+  }
+}
 
 body main section .wsppImg {
   height: 100px;
-  width: 100px; }
-  @media (max-width: 3840px) {
-    body main section .wsppImg {
-      margin-left: 400px; } }
-  @media (max-width: 1200px) {
-    body main section .wsppImg {
-      margin-left: 0px; } }
+  width: 100px;
+}
+@media (max-width: 3840px) {
+  body main section .wsppImg {
+    margin-left: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  body main section .wsppImg {
+    margin-left: 0px;
+  }
+}
 
 @media (max-width: 3840px) {
   body main section .telefono {
-    margin-right: 500px; } }
+    margin-right: 500px;
+  }
+}
 
 @media (max-width: 1200px) {
   body main section .telefono {
     margin-left: 210px;
-    margin-top: 15px; } }
+    margin-top: 15px;
+  }
+}
 
 body main section .mailImg {
   height: 100px;
   width: 100px;
-  margin-top: 10px; }
-  @media (max-width: 3840px) {
-    body main section .mailImg {
-      margin-left: 400px; } }
-  @media (max-width: 992px) {
-    body main section .mailImg {
-      margin-left: 0px; } }
+  margin-top: 10px;
+}
+@media (max-width: 3840px) {
+  body main section .mailImg {
+    margin-left: 400px;
+  }
+}
+@media (max-width: 992px) {
+  body main section .mailImg {
+    margin-left: 0px;
+  }
+}
 
 @media (max-width: 3840px) {
   body main section .correo {
-    margin-right: 500px; } }
+    margin-right: 500px;
+  }
+}
 
 @media (max-width: 992px) {
   body main section .correo {
     margin-left: 170px;
     margin-top: 15px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+  }
+}
 
 body div div .loginArea {
   background-color: #ff6000;
   border: solid;
   border-color: #454545;
-  padding: 50px; }
+  padding: 50px;
+}
 
 .navbar {
   background-color: #ff6000;
   border-color: #454545;
   border-bottom: solid;
   font-size: 25px;
-  font-family: "Bebas Neue", sans-serif; }
+  font-family: "Bebas Neue", sans-serif;
+}
 
 .carousel {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .card {
   background-color: #ff6000;
@@ -164,16 +214,23 @@ body div div .loginArea {
   border-width: 0.2rem;
   text-align: center;
   margin-bottom: 15px;
-  margin-top: 15px; }
-  @media (max-width: 300px) {
-    .card {
-      width: 250px; } }
-  @media (max-width: 290px) {
-    .card {
-      width: 230px; } }
-  @media (max-width: 265px) {
-    .card {
-      width: 200px; } }
+  margin-top: 15px;
+}
+@media (max-width: 300px) {
+  .card {
+    width: 250px;
+  }
+}
+@media (max-width: 290px) {
+  .card {
+    width: 230px;
+  }
+}
+@media (max-width: 265px) {
+  .card {
+    width: 200px;
+  }
+}
 
 .productsCategoryCads {
   background-color: #ff6000;
@@ -184,35 +241,46 @@ body div div .loginArea {
   border-width: 0.2rem;
   text-align: center;
   margin-bottom: 15px;
-  margin-top: 15px; }
-  @media (max-width: 300px) {
-    .productsCategoryCads {
-      width: 250px; } }
-  @media (max-width: 290px) {
-    .productsCategoryCads {
-      width: 230px; } }
-  @media (max-width: 265px) {
-    .productsCategoryCads {
-      width: 200px; } }
+  margin-top: 15px;
+}
+@media (max-width: 300px) {
+  .productsCategoryCads {
+    width: 250px;
+  }
+}
+@media (max-width: 290px) {
+  .productsCategoryCads {
+    width: 230px;
+  }
+}
+@media (max-width: 265px) {
+  .productsCategoryCads {
+    width: 200px;
+  }
+}
 
 .h3Index {
-  text-align: center; }
+  text-align: center;
+}
 
 h1 {
   font-size: 50px;
   text-decoration: underline #454545;
   text-align: center;
   font-weight: bold;
-  font-family: "Bebas Neue", sans-serif; }
+  font-family: "Bebas Neue", sans-serif;
+}
 
 h2 {
   font-size: 35px;
   text-decoration: underline #454545;
   text-align: center;
-  font-family: "Bebas Neue", sans-serif; }
+  font-family: "Bebas Neue", sans-serif;
+}
 
 h3 {
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 .imgLogo2 {
   width: 150px;
@@ -222,7 +290,8 @@ h3 {
   margin-left: 850px;
   border: solid;
   border-color: #454545;
-  background-color: #ff6000; }
+  background-color: #ff6000;
+}
 
 .imgLogo3 {
   width: 150px;
@@ -230,14 +299,17 @@ h3 {
   padding: 8px;
   border: solid;
   border-color: #454545;
-  background-color: #ff6000; }
+  background-color: #ff6000;
+}
 
 .logoIndex {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #454545; }
+  background-color: #454545;
+}
 
 a:hover {
   background-color: #454545;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
