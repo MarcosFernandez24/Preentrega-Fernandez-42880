@@ -12,15 +12,10 @@ $positionGrad: center;
   border-color: $themeColor2;
   border-style: solid;
   border-width: 0.2rem;
-  padding: 6px;
   background-color: $themeColor;
   margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: -25px;
 }
 @mixin imgsRestaurant {
-  width: 400px;
-  height: 267px;
   margin-top: 50px;
   background-color: $themeColor;
   border: solid;
@@ -41,34 +36,26 @@ body {
   background-color: $bgColor;
   font-family: $font;
 
-  .grad1 {
-    background: linear-gradient(top, pink, violet, purple);
-  }
+  .container {
+    margin-top: 20px;
+    justify-content: center;
 
-  section {
-    .container {
-      margin-top: 20px;
-      justify-content: center;
-    }
     div {
-      div {
-        // Producto mas vendido
+      // Producto mas vendido
 
-        .mejoresProductos {
-          @include mejoresProductosIndex();
-        }
+      .mejoresProductos {
+        @include mejoresProductosIndex();
       }
+
       .producto1 {
-        width: 500px;
         border-color: $themeColor2;
         border-style: solid;
         border-width: 0.2rem;
         padding: 6px;
         background-color: $themeColor;
       }
-
-      // Producto mas vendido
     }
+    // Producto mas vendido
   }
 
   .container {
@@ -76,12 +63,12 @@ body {
     justify-content: center;
     align-items: center;
 
-    .mejoresProductos {
-      @include mejoresProductosIndex();
-
-      .cardsRec {
-        display: flex;
-        margin-left: 1px;
+    div {
+      .mejoresProductos {
+        @include mejoresProductosIndex();
+        @media (max-width: 400px) {
+          font-size: xx-large;
+        }
       }
     }
   }
@@ -105,6 +92,9 @@ body {
     border-top: solid;
     margin-top: 10px;
     font-family: $font;
+    @media (max-width: 400px) {
+    font-size: xx-large;
+  }
   }
 
   section {
@@ -113,6 +103,9 @@ body {
       border-color: $themeColor2;
       border-style: solid;
       margin-top: 10px;
+      @media (max-width: 400px) {
+        font-size: xx-large;
+      }
     }
   }
 }
@@ -128,12 +121,27 @@ body {
     border-color: $themeColor2;
     font-family: "Bebas Neue", sans-serif;
     font-size: xx-large;
+    @media (max-width: 600px) {
+      font-size: large;
+    }
   }
   .imagenRestaurant1 {
     @include imgsRestaurant();
+    @media (max-width: 460px) {
+      width: 300px;
+    }
+    @media (max-width: 340px) {
+      width: 250px;
+    }
   }
   .imagenRestaurant2 {
     @include imgsRestaurant();
+    @media (max-width: 460px) {
+      width: 300px;
+    }
+    @media (max-width: 340px) {
+      width: 250px;
+    }
   }
 }
 
@@ -150,7 +158,7 @@ body {
         @media (max-width: 3840px) {
           margin-left: 400px;
         }
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
           margin-left: 0px;
         }
       }
@@ -158,7 +166,7 @@ body {
         @media (max-width: 3840px) {
           margin-right: 500px;
         }
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
           margin-left: 210px;
           margin-top: 15px;
         }

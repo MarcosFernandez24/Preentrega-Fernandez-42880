@@ -6,45 +6,36 @@
 body {
   background-color: #ffa559;
   font-family: "Bebas Neue", sans-serif; }
-  body .grad1 {
-    background: linear-gradient(top, pink, violet, purple); }
-  body section .container {
-    margin-top: 20px;
-    justify-content: center; }
-  body section div div .mejoresProductos {
-    margin-top: 30px;
-    border-color: #454545;
-    border-style: solid;
-    border-width: 0.2rem;
-    padding: 6px;
-    background-color: #ff6000;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: -25px; }
-  body section div .producto1 {
-    width: 500px;
-    border-color: #454545;
-    border-style: solid;
-    border-width: 0.2rem;
-    padding: 6px;
-    background-color: #ff6000; }
   body .container {
     margin-top: 20px;
-    justify-content: center;
-    align-items: center; }
-    body .container .mejoresProductos {
+    justify-content: center; }
+    body .container div .mejoresProductos {
       margin-top: 30px;
       border-color: #454545;
       border-style: solid;
       border-width: 0.2rem;
-      padding: 6px;
       background-color: #ff6000;
-      margin-bottom: 10px;
-      margin-right: 10px;
-      margin-left: -25px; }
-      body .container .mejoresProductos .cardsRec {
-        display: flex;
-        margin-left: 1px; }
+      margin-bottom: 10px; }
+    body .container div .producto1 {
+      border-color: #454545;
+      border-style: solid;
+      border-width: 0.2rem;
+      padding: 6px;
+      background-color: #ff6000; }
+  body .container {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center; }
+    body .container div .mejoresProductos {
+      margin-top: 30px;
+      border-color: #454545;
+      border-style: solid;
+      border-width: 0.2rem;
+      background-color: #ff6000;
+      margin-bottom: 10px; }
+      @media (max-width: 400px) {
+        body .container div .mejoresProductos {
+          font-size: xx-large; } }
 
 section .imgLogo2 {
   border: solid;
@@ -57,12 +48,18 @@ body .headerStyle {
   border-top: solid;
   margin-top: 10px;
   font-family: "Bebas Neue", sans-serif; }
+  @media (max-width: 400px) {
+    body .headerStyle {
+      font-size: xx-large; } }
 
 body section .categoryText {
   background-color: #ff6000;
   border-color: #454545;
   border-style: solid;
   margin-top: 10px; }
+  @media (max-width: 400px) {
+    body section .categoryText {
+      font-size: xx-large; } }
 
 body .bodyQuienesSomos {
   background-color: #ff6000;
@@ -70,26 +67,37 @@ body .bodyQuienesSomos {
   border-color: #454545;
   font-family: "Bebas Neue", sans-serif;
   font-size: xx-large; }
+  @media (max-width: 600px) {
+    body .bodyQuienesSomos {
+      font-size: large; } }
 
 body .imagenRestaurant1 {
-  width: 400px;
-  height: 267px;
   margin-top: 50px;
   background-color: #ff6000;
   border: solid;
   border-color: #454545;
   padding: 8px;
   margin-bottom: 10px; }
+  @media (max-width: 460px) {
+    body .imagenRestaurant1 {
+      width: 300px; } }
+  @media (max-width: 340px) {
+    body .imagenRestaurant1 {
+      width: 250px; } }
 
 body .imagenRestaurant2 {
-  width: 400px;
-  height: 267px;
   margin-top: 50px;
   background-color: #ff6000;
   border: solid;
   border-color: #454545;
   padding: 8px;
   margin-bottom: 10px; }
+  @media (max-width: 460px) {
+    body .imagenRestaurant2 {
+      width: 300px; } }
+  @media (max-width: 340px) {
+    body .imagenRestaurant2 {
+      width: 250px; } }
 
 body main section .wsppImg {
   height: 100px;
@@ -97,7 +105,7 @@ body main section .wsppImg {
   @media (max-width: 3840px) {
     body main section .wsppImg {
       margin-left: 400px; } }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     body main section .wsppImg {
       margin-left: 0px; } }
 
@@ -105,7 +113,7 @@ body main section .wsppImg {
   body main section .telefono {
     margin-right: 500px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   body main section .telefono {
     margin-left: 210px;
     margin-top: 15px; } }
@@ -150,36 +158,42 @@ body div div .loginArea {
 .card {
   background-color: #ff6000;
   padding: 10px;
-  margin-left: 100px;
   border-color: #454545;
   border-style: solid;
   border-radius: 1px;
   border-width: 0.2rem;
   text-align: center;
   margin-bottom: 15px;
-  height: 25rem;
-  width: 25rem;
   margin-top: 15px; }
-  @media (max-width: 960px) {
+  @media (max-width: 300px) {
     .card {
-      margin-left: 40px; } }
+      width: 250px; } }
+  @media (max-width: 290px) {
+    .card {
+      width: 230px; } }
+  @media (max-width: 265px) {
+    .card {
+      width: 200px; } }
 
 .productsCategoryCads {
   background-color: #ff6000;
   padding: 10px;
-  margin-left: 100px;
   border-color: #454545;
   border-style: solid;
   border-radius: 1px;
   border-width: 0.2rem;
   text-align: center;
   margin-bottom: 15px;
-  height: 22rem;
-  width: 20rem;
-  margin-left: 150px; }
-  @media (max-width: 960px) {
+  margin-top: 15px; }
+  @media (max-width: 300px) {
     .productsCategoryCads {
-      margin-left: 100px; } }
+      width: 250px; } }
+  @media (max-width: 290px) {
+    .productsCategoryCads {
+      width: 230px; } }
+  @media (max-width: 265px) {
+    .productsCategoryCads {
+      width: 200px; } }
 
 .h3Index {
   text-align: center; }
@@ -223,16 +237,6 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: #454545; }
-
-.imagenRestaurant1 {
-  width: 400px;
-  height: 267px;
-  margin-top: 50px; }
-
-.imagenRestaurant2 {
-  width: 400px;
-  height: 267px;
-  margin-top: 50px; }
 
 a:hover {
   background-color: #454545;
