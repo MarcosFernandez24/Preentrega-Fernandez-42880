@@ -96,15 +96,16 @@ body {
       font-size: xx-large;
     }
   }
-
   section {
-    .categoryText {
-      background-color: $themeColor;
-      border-color: $themeColor2;
-      border-style: solid;
-      margin-top: 10px;
-      @media (max-width: 400px) {
-        font-size: xx-large;
+    div {
+      .categoryText {
+        background-color: $themeColor;
+        border-color: $themeColor2;
+        border-style: solid;
+        margin-top: 10px;
+        @media (max-width: 400px) {
+          font-size: xx-large;
+        }
       }
     }
   }
