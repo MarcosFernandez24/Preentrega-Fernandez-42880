@@ -24,6 +24,11 @@ $positionGrad: center;
   margin-bottom: 10px;
 }
 
+@mixin bodyPartial {
+  background-color: $bgColor;
+  font-family: $font;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -33,8 +38,7 @@ $positionGrad: center;
 // Body de "index.html"
 
 body {
-  background-color: $bgColor;
-  font-family: $font;
+  @include bodyPartial();
 
   .container {
     margin-top: 20px;
@@ -85,6 +89,7 @@ section {
   }
 }
 body {
+  @include bodyPartial();
   .headerStyle {
     background-color: $themeColor;
     border-color: $themeColor2;
@@ -116,6 +121,7 @@ body {
 //Body de "quienesSomos.html"
 
 body {
+  @include bodyPartial();
   .bodyQuienesSomos {
     background-color: $themeColor;
     border: solid;
@@ -151,15 +157,19 @@ body {
 //Body de "contacto.html"
 
 body {
+  @include bodyPartial();
   main {
     section {
-      .wsppImg {
-        height: 100px;
-        width: 100px;
-        @media (max-width: 3840px) {
-          margin-left: 400px;
+      h2 {
+        @media (max-width: 568px) {
+          font-size: x-large;
         }
-        @media (max-width: 1200px) {
+      }
+      .wsppImg {
+        @media (max-width: 3840px) {
+          margin-left: 350px;
+        }
+        @media (max-width: 992px) {
           margin-left: 0px;
         }
       }
@@ -168,8 +178,8 @@ body {
           margin-right: 500px;
         }
         @media (max-width: 1200px) {
-          margin-left: 210px;
           margin-top: 15px;
+          margin-bottom: 10px;
         }
       }
       .mailImg {
@@ -177,7 +187,7 @@ body {
         width: 100px;
         margin-top: 10px;
         @media (max-width: 3840px) {
-          margin-left: 400px;
+          margin-left: 350px;
         }
         @media (max-width: 992px) {
           margin-left: 0px;
@@ -188,7 +198,6 @@ body {
           margin-right: 500px;
         }
         @media (max-width: 992px) {
-          margin-left: 170px;
           margin-top: 15px;
           margin-bottom: 10px;
         }
@@ -200,6 +209,7 @@ body {
 //Body de "contacto.html"
 
 body {
+  @include bodyPartial();
   div {
     div {
       .loginArea {
@@ -207,6 +217,9 @@ body {
         border: solid;
         border-color: $themeColor2;
         padding: 50px;
+        @media (max-width: 560px) {
+          
+        }
       }
     }
   }
