@@ -1,152 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  body .container {
-    margin-top: 20px;
-    justify-content: center; }
-    body .container div .mejoresProductos {
-      margin-top: 30px;
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      background-color: #ff6000;
-      margin-bottom: 10px; }
-    body .container div .producto1 {
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      padding: 6px;
-      background-color: #ff6000; }
-  body .container {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center; }
-    body .container div .mejoresProductos {
-      margin-top: 30px;
-      border-color: #454545;
-      border-style: solid;
-      border-width: 0.2rem;
-      background-color: #ff6000;
-      margin-bottom: 10px; }
-      @media (max-width: 400px) {
-        body .container div .mejoresProductos {
-          font-size: xx-large; } }
-
-section .imgLogo2 {
-  border: solid;
-  border-color: #454545; }
-
-body {
-  background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  body .headerStyle {
-    background-color: #ff6000;
-    border-color: #454545;
-    border-bottom: solid;
-    border-top: solid;
-    margin-top: 10px;
-    font-family: "Bebas Neue", sans-serif; }
-    @media (max-width: 400px) {
-      body .headerStyle {
-        font-size: xx-large; } }
-  body section div .categoryText {
-    background-color: #ff6000;
-    border-color: #454545;
-    border-style: solid;
-    margin-top: 10px; }
-    @media (max-width: 400px) {
-      body section div .categoryText {
-        font-size: xx-large; } }
-
-body {
-  background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  body .bodyQuienesSomos {
-    background-color: #ff6000;
-    border: solid;
-    border-color: #454545;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: xx-large; }
-    @media (max-width: 600px) {
-      body .bodyQuienesSomos {
-        font-size: large; } }
-  body .imagenRestaurant1 {
-    margin-top: 50px;
-    background-color: #ff6000;
-    border: solid;
-    border-color: #454545;
-    padding: 8px;
-    margin-bottom: 10px; }
-    @media (max-width: 460px) {
-      body .imagenRestaurant1 {
-        width: 300px; } }
-    @media (max-width: 340px) {
-      body .imagenRestaurant1 {
-        width: 250px; } }
-  body .imagenRestaurant2 {
-    margin-top: 50px;
-    background-color: #ff6000;
-    border: solid;
-    border-color: #454545;
-    padding: 8px;
-    margin-bottom: 10px; }
-    @media (max-width: 460px) {
-      body .imagenRestaurant2 {
-        width: 300px; } }
-    @media (max-width: 340px) {
-      body .imagenRestaurant2 {
-        width: 250px; } }
-
-body {
-  background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  @media (max-width: 568px) {
-    body main section h2 {
-      font-size: x-large; } }
-  @media (max-width: 3840px) {
-    body main section .wsppImg {
-      margin-left: 350px; } }
-  @media (max-width: 992px) {
-    body main section .wsppImg {
-      margin-left: 0px; } }
-  @media (max-width: 3840px) {
-    body main section .telefono {
-      margin-right: 500px; } }
-  @media (max-width: 1200px) {
-    body main section .telefono {
-      margin-top: 15px;
-      margin-bottom: 10px; } }
-  body main section .mailImg {
-    height: 100px;
-    width: 100px;
-    margin-top: 10px; }
-    @media (max-width: 3840px) {
-      body main section .mailImg {
-        margin-left: 350px; } }
-    @media (max-width: 992px) {
-      body main section .mailImg {
-        margin-left: 0px; } }
-  @media (max-width: 3840px) {
-    body main section .correo {
-      margin-right: 500px; } }
-  @media (max-width: 992px) {
-    body main section .correo {
-      margin-top: 15px;
-      margin-bottom: 10px; } }
-
-body {
-  background-color: #ffa559;
-  font-family: "Bebas Neue", sans-serif; }
-  body div div .loginArea {
-    background-color: #ff6000;
-    border: solid;
-    border-color: #454545;
-    padding: 50px; }
+@charset "UTF-8";
+footer {
+  /* Estilos para el pie de página */
+  float: left;
+  width: 100%;
+  background-color: #454545;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ff6000;
+  font-size: 14px;
+  margin-top: 40px; }
+  footer a:hover {
+    color: #ff6000; }
 
 .navbar {
   background-color: #ff6000;
@@ -210,7 +75,6 @@ h1 {
 
 h2 {
   font-size: 35px;
-  text-decoration: underline #454545;
   text-align: center;
   font-family: "Bebas Neue", sans-serif; }
 
@@ -233,7 +97,8 @@ h3 {
   padding: 8px;
   border: solid;
   border-color: #454545;
-  background-color: #ff6000; }
+  background-color: #ff6000;
+  margin-bottom: 10px; }
 
 .logoIndex {
   display: flex;
@@ -241,6 +106,158 @@ h3 {
   align-items: center;
   background-color: #454545; }
 
-a:hover {
-  background-color: #454545;
-  font-size: 1.6rem; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif; }
+  body header nav a:hover {
+    background-color: #454545;
+    font-size: 1.5rem; }
+  body main .container {
+    margin-top: 20px;
+    justify-content: center; }
+    body main .container div .mejoresProductos {
+      margin-top: 30px;
+      border-color: #454545;
+      border-style: solid;
+      border-width: 0.2rem;
+      background-color: #ff6000;
+      margin-bottom: 10px; }
+    body main .container div .producto1 {
+      border-color: #454545;
+      border-style: solid;
+      border-width: 0.2rem;
+      padding: 6px;
+      background-color: #ff6000; }
+  body main .container {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center; }
+    body main .container div .mejoresProductos {
+      margin-top: 30px;
+      border-color: #454545;
+      border-style: solid;
+      border-width: 0.2rem;
+      background-color: #ff6000;
+      margin-bottom: 10px; }
+      @media (max-width: 400px) {
+        body main .container div .mejoresProductos {
+          font-size: xx-large; } }
+
+body {
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif; }
+  body .headerStyle {
+    background-color: #ff6000;
+    border-color: #454545;
+    border-bottom: solid;
+    border-top: solid;
+    margin-top: 10px;
+    font-family: "Bebas Neue", sans-serif; }
+    @media (max-width: 400px) {
+      body .headerStyle {
+        font-size: xx-large; } }
+  body main div .categoryText {
+    background-color: #ff6000;
+    border-color: #454545;
+    border-style: solid;
+    margin-top: 10px; }
+    @media (max-width: 400px) {
+      body main div .categoryText {
+        font-size: xx-large; } }
+
+body main {
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif; }
+  body main .bodyQuienesSomos {
+    background-color: #ff6000;
+    border: solid;
+    border-color: #454545;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: xx-large; }
+    @media (max-width: 600px) {
+      body main .bodyQuienesSomos {
+        font-size: large; } }
+  body main .imagenRestaurant1 {
+    margin-top: 50px;
+    background-color: #ff6000;
+    border: solid;
+    border-color: #454545;
+    padding: 8px;
+    margin-bottom: 10px; }
+    @media (max-width: 460px) {
+      body main .imagenRestaurant1 {
+        width: 300px; } }
+    @media (max-width: 340px) {
+      body main .imagenRestaurant1 {
+        width: 250px; } }
+  body main .imagenRestaurant2 {
+    margin-top: 50px;
+    background-color: #ff6000;
+    border: solid;
+    border-color: #454545;
+    padding: 8px;
+    margin-bottom: 10px; }
+    @media (max-width: 460px) {
+      body main .imagenRestaurant2 {
+        width: 300px; } }
+    @media (max-width: 340px) {
+      body main .imagenRestaurant2 {
+        width: 250px; } }
+
+body {
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif; }
+  @media (max-width: 568px) {
+    body main section h2 {
+      font-size: x-large; } }
+  @media (max-width: 3840px) {
+    body main section .wsppImg {
+      margin-left: 350px; } }
+  @media (max-width: 992px) {
+    body main section .wsppImg {
+      margin-left: 0px; } }
+  @media (max-width: 3840px) {
+    body main section .telefono {
+      margin-right: 500px; } }
+  @media (max-width: 1200px) {
+    body main section .telefono {
+      margin-top: 15px;
+      margin-bottom: 10px; } }
+  body main section .mailImg {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px; }
+    @media (max-width: 3840px) {
+      body main section .mailImg {
+        margin-left: 350px; } }
+    @media (max-width: 992px) {
+      body main section .mailImg {
+        margin-left: 0px; } }
+  @media (max-width: 3840px) {
+    body main section .correo {
+      margin-right: 500px; } }
+  @media (max-width: 992px) {
+    body main section .correo {
+      margin-top: 15px;
+      margin-bottom: 10px; } }
+  body section .contactoFooter {
+    margin-top: 228px; }
+
+body {
+  background-color: #ffa559;
+  font-family: "Bebas Neue", sans-serif; }
+  body div div .loginArea {
+    background-color: #ff6000;
+    border: solid;
+    border-color: #454545;
+    padding: 50px; }
+    body div div .loginArea .bootstrapButton {
+      background-color: #454545;
+      color: #ff6000; }
+  body .contactoFooter {
+    margin-top: 62px; }
