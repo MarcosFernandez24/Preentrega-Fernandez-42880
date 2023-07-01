@@ -6,6 +6,27 @@ $themeColor2: #454545;
 $fontGrad: 25px;
 $positionGrad: center;
 
+
+@import "bodyPartial";
+
+// componentes de bootstrap(cards, navBar, etc)
+
+@import "bootstrapComponents";
+
+// componentes de bootstrap(cards, navBar, etc)
+
+// Strings como (H1, H2, etc)
+
+@import "string";
+
+// Strings como (H1, H2, etc)
+
+// imagenes o logo
+
+@import "imgs";
+
+// imagenes o logo
+
 // Include
 @mixin mejoresProductosIndex {
   margin-top: 30px;
@@ -24,7 +45,7 @@ $positionGrad: center;
   margin-bottom: 10px;
 }
 
-@mixin bodyPartial {
+@mixin bodyStyle {
   background-color: $bgColor;
   font-family: $font;
 }
@@ -38,58 +59,68 @@ $positionGrad: center;
 // Body de "index.html"
 
 body {
-  @include bodyPartial();
+  @include bodyStyle();
+  
+  header{
 
-  .container {
-    margin-top: 20px;
-    justify-content: center;
-
-    div {
-      // Producto mas vendido
-
-      .mejoresProductos {
-        @include mejoresProductosIndex();
-      }
-
-      .producto1 {
-        border-color: $themeColor2;
-        border-style: solid;
-        border-width: 0.2rem;
-        padding: 6px;
-        background-color: $themeColor;
+    nav{
+      a:hover{
+        background-color: $themeColor2;
+        font-size: 1.5rem;
       }
     }
-    // Producto mas vendido
   }
 
-  .container {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+  main{
 
-    div {
-      .mejoresProductos {
-        @include mejoresProductosIndex();
-        @media (max-width: 400px) {
-          font-size: xx-large;
+    .container {
+      margin-top: 20px;
+      justify-content: center;
+      
+      div {
+        // Producto mas vendido
+        
+        .mejoresProductos {
+          @include mejoresProductosIndex();
+        }
+        
+        .producto1 {
+          border-color: $themeColor2;
+          border-style: solid;
+          border-width: 0.2rem;
+          padding: 6px;
+          background-color: $themeColor;
+        }
+      }
+      // Producto mas vendido
+    }
+    
+    .container {
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+      
+      div {
+        .mejoresProductos {
+          @include mejoresProductosIndex();
+          @media (max-width: 400px) {
+            font-size: xx-large;
+          }
         }
       }
     }
   }
-}
-
-// Body de "index.html"
-
+  }
+  
+  // Body de "index.html"
+  
 // Body de "productos.html"
 
-section {
-  .imgLogo2 {
-    border: solid;
-    border-color: $themeColor2;
-  }
-}
+
+
+
 body {
-  @include bodyPartial();
+  @include bodyStyle();
   .headerStyle {
     background-color: $themeColor;
     border-color: $themeColor2;
@@ -101,7 +132,8 @@ body {
       font-size: xx-large;
     }
   }
-  section {
+  
+  main{
     div {
       .categoryText {
         background-color: $themeColor;
@@ -114,6 +146,7 @@ body {
       }
     }
   }
+  
 }
 
 // Body de "productos.html"
@@ -121,33 +154,36 @@ body {
 //Body de "quienesSomos.html"
 
 body {
-  @include bodyPartial();
-  .bodyQuienesSomos {
-    background-color: $themeColor;
-    border: solid;
-    border-color: $themeColor2;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: xx-large;
-    @media (max-width: 600px) {
-      font-size: large;
+  main{
+
+    @include bodyStyle();
+    .bodyQuienesSomos {
+      background-color: $themeColor;
+      border: solid;
+      border-color: $themeColor2;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: xx-large;
+      @media (max-width: 600px) {
+        font-size: large;
+      }
     }
-  }
-  .imagenRestaurant1 {
-    @include imgsRestaurant();
-    @media (max-width: 460px) {
-      width: 300px;
+    .imagenRestaurant1 {
+      @include imgsRestaurant();
+      @media (max-width: 460px) {
+        width: 300px;
+      }
+      @media (max-width: 340px) {
+        width: 250px;
+      }
     }
-    @media (max-width: 340px) {
-      width: 250px;
-    }
-  }
-  .imagenRestaurant2 {
-    @include imgsRestaurant();
-    @media (max-width: 460px) {
-      width: 300px;
-    }
-    @media (max-width: 340px) {
-      width: 250px;
+    .imagenRestaurant2 {
+      @include imgsRestaurant();
+      @media (max-width: 460px) {
+        width: 300px;
+      }
+      @media (max-width: 340px) {
+        width: 250px;
+      }
     }
   }
 }
@@ -157,7 +193,7 @@ body {
 //Body de "contacto.html"
 
 body {
-  @include bodyPartial();
+  @include bodyStyle();
   main {
     section {
       h2 {
@@ -204,12 +240,20 @@ body {
       }
     }
   }
+  section{
+
+    .contactoFooter{
+      margin-top: 228px;
+    }
+  }
 }
 
 //Body de "contacto.html"
 
+
+//Body del formulario
 body {
-  @include bodyPartial();
+  @include bodyStyle();
   div {
     div {
       .loginArea {
@@ -217,33 +261,20 @@ body {
         border: solid;
         border-color: $themeColor2;
         padding: 50px;
-        @media (max-width: 560px) {
-          
+
+        .bootstrapButton{
+          background-color: $themeColor2;
+          color: $themeColor;
         }
       }
+
     }
+  }
+  .contactoFooter{
+    margin-top: 62px;
   }
 }
 
-// componentes de bootstrap(cards, navBar, etc)
+//Body del formulario
 
-@import "bootstrapComponents";
 
-// componentes de bootstrap(cards, navBar, etc)
-
-// Strings como (H1, H2, etc)
-
-@import "string";
-
-// Strings como (H1, H2, etc)
-
-// imagenes o logo
-
-@import "imgs";
-
-// imagenes o logo
-
-a:hover {
-  background-color: $themeColor2;
-  font-size: 1.6rem;
-}

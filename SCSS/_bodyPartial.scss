@@ -1,15 +1,24 @@
-/* Estilos generales */
-header {
-    /* Estilos para el encabezado */
-  }
-  
-  nav {
-    /* Estilos para el menú de navegación */
-  }
-  
+
+
   footer {
     /* Estilos para el pie de página */
+    float: left;
+    width: 100%;
+    background-color: $themeColor2;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: $themeColor;
+    font-size: 14px;
+    margin-top: 40px;
+    
+    
+      a:hover{
+        color: $themeColor;
+      
+    }
+    
   }
   
-  /* Importar partial para los estilos del cuerpo */
-  @import "bodyPartial";
+
+  
